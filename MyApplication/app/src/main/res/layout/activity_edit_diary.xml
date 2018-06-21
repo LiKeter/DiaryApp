@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="标题"
+            android:paddingLeft="5dp"
+            android:textColor="#626366"
+            tools:ignore="RtlSymmetry">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="内容"
+            android:paddingLeft="5dp"
+            android:textColor="#626366"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/saveButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:alpha="70"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/save" />
+
+        <ImageButton
+            android:id="@+id/insetpicButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:alpha="70"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/insertpic" />
+
+        <ImageButton
+            android:id="@+id/recordButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:alpha="70"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/record" />
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:alpha="70"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/camera" />
+    </LinearLayout>
+
+</LinearLayout>
